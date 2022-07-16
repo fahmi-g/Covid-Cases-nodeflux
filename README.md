@@ -4,10 +4,7 @@
  1. We can easily pull the image from the Docker Hub: ``` docker pull fammi/covid-status-api-crow ```
  2. Create the container without specific settings needed:
     ```
-    - docker container create --name "CONTAINER_NAME" fammi/covid-status-api-crow:dummy
-      or
-    - docker container create --name "CONTAINER_NAME" --publish "PORT":18080 fammi/covid-status-api-crow:dummy
-    ```
+    docker container create --name "CONTAINER_NAME" --publish "PORT":18080 fammi/covid-status-api-crow:dummy```
 
 ## How To Use
 - The API specification is in here: [Covid Cases Dummy API Specification](https://fahmi-g.github.io/Covid-Cases-nodeflux/)
