@@ -35,6 +35,7 @@
    <ul><li><img src="assets/images/before.png" alt="Idle" width="500"/></li></ul></ul>
   <ul><li>With repetitive requests</li>
    <ul><li><img src="assets/images/while.png" alt="Idle" width="500"/></li></ul></ul>
+     We can see that the CPU usage only increase 0.36% of the default docker-provided resource.
    
 - Logs
   <ul><li>Healty logs, no error</li>
