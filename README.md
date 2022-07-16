@@ -15,8 +15,9 @@
   You can even use that for testing your API that you just built (The Covid Cases Dummy API). How cool!
 
 ## API Testing
- -  If you are a Postman person and more prefer to use Postman, dont worry I got you.
-  Here is the link if you want to use our tests collection: [Postman Covid Cases Dummy API Tests Collection](https://www.getpostman.com/collections/a8c4c7c1ec07498ca7ac)
+  <ul><li> If you are a Postman person and more prefer to use Postman, dont worry I got you.
+  Here is the link if you want to use our tests collection: [Postman Covid Cases Dummy API Tests Collection](https://www.getpostman.com/collections/a8c4c7c1ec07498ca7ac)</li>
+  <ul><li><img src="assets/images/pass.png" alt="Tests" width="500"/></li></ul></ul>
 
 #### How do i use that link?
    <ol><li> Open Postman, in the left hand side you will see the collections tab. Then simply click Import.</li>
@@ -28,5 +29,16 @@
     -  Now you can use and modify our test collection as you want.
 
 ## How The Backend Work
-   <ul><li>Here is the simple picture of how the API operates in the backend.</li>
+   <ul><li>Here is a simple picture of how the API operates in the backend.</li>
    <ul><li><img src="assets/images/Vertical Swimlane Diagram.png" alt="Flow Diagram" width="600"/></li></ul></ul>
+
+## API Performance
+- Here are some picture of API performance/resource usage
+  <ul><li>Idle API</li>
+   <ul><li><img src="assets/images/before.png" alt="Idle" width="500"/></li></ul></ul>
+  <ul><li>With repetitive requests</li>
+   <ul><li><img src="assets/images/while.png" alt="Idle" width="500"/></li></ul></ul>
+   
+- Logs
+  <ul><li>Healty logs, no error</li>
+   <ul><li><img src="assets/images/logs.png" alt="Idle" width="500"/></li></ul></ul>
