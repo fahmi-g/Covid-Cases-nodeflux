@@ -15,7 +15,7 @@
   You can even use that for testing your API that you just built (The Covid Cases Dummy API). How cool!
 
 ## API Testing
-  <ul><li> If you are a Postman person and more prefer to use Postman, dont worry I got you.
+  <ul><li> If you are a Postman person and more prefer to use Postman, dont worry we got you.
   Here is the link if you want to use our tests collection: [Postman Covid Cases Dummy API Tests Collection](https://www.getpostman.com/collections/a8c4c7c1ec07498ca7ac)</li>
   <ul><li><img src="assets/images/pass.png" alt="Tests" width="500"/></li></ul></ul>
 
