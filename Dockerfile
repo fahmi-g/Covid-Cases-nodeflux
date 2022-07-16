@@ -15,5 +15,5 @@ RUN mv include/* /usr/local/include/
 
 WORKDIR /
 COPY . .
-RUN g++ main.cpp CustomTimeValidation.cpp
+RUN g++ main.cpp CustomLib/CustomTimeValidation.cpp
 CMD ./a.out
