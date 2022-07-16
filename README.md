@@ -28,3 +28,5 @@
     -  Now you can use and modify our test collection as you want.
 
 ## How The Backend Work
+   <ul><li>Here is the simple picture of how the API operates in the backend.</li>
+   <ul><li><img src="assets/images/Vertical Swimlane Diagram.png" alt="Flow Diagram" width="600"/></li></ul></ul>
