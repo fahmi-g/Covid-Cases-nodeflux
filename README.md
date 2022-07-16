@@ -39,3 +39,8 @@
 - Logs
   <ul><li>Healty logs, no error</li>
    <ul><li><img src="assets/images/logs.png" alt="Idle" width="500"/></li></ul></ul>
+
+## Limitations
+1. The API is built without CMAKE which is less efficient. It's because I'm not that familiar with CMAKE, but I will create some programs with CMAKE in the future.
+2. The API uses a static mechanism, the data inside is hardcoded so input from users currently doesn't really do much to the response.
+3. Since this is just a simple API and not hosted I cannot do many tests such as state correction, latency test, etc.
