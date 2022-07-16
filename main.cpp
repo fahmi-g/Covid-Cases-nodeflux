@@ -78,7 +78,7 @@ int main()
                     {"deaths", 3727},
                     {"active", 548979},
                 };
-                covidData["message"] = "Successfuly retrieve yearly data of total covid cases of " + dateTime + ".";
+                covidData["message"] = "Successfuly monthly data of total covid cases of " + dateTime + ".";
 
 
                 return response(covidData);
@@ -111,7 +111,7 @@ int main()
                     {"deaths", 3},
                     {"active", 152},
                 };
-                covidData["message"] = "Successfuly retrieve yearly data of total covid cases of " + dateTime + ".";
+                covidData["message"] = "Successfuly retrieve daily data of total covid cases of " + dateTime + ".";
 
                 return response(covidData);
             });

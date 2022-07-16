@@ -1,0 +1,195 @@
+openapi: "3.0.2"
+info:
+  title: Covid Cases Dummy API
+  description: This is a simple C++ Covid Cases API.
+  contact:
+    name: API Support
+    url: https://www.linkedin.com/in/fahmi250
+    email: muhammadfahmi250@gmail.com
+  license:
+    name: Nodeflux
+    url: https://www.nodeflux.io/
+  version: "1.0.0"
+servers:
+  - url: http://localhost
+    description: Local development server
+    variables:
+      port:
+        enum:
+          - '18080'
+          - '80'
+        default: '18080'
+paths:
+  /:
+    get:
+      tags: ["API Contract"]
+      description: Entry point for all API, provide general information of covid cases.
+      responses:
+        '200':
+          description: General information of covid cases.
+          content:
+            application/json:
+              schema:
+                type: json
+                properties:
+                  ok:
+                    type: boolean
+                    description: Status
+                  data:
+                    type: object
+                    description: Cases
+                  message:
+                    type: string
+                    description: Response message
+              examples:
+                'JSON Response':
+                  value:
+                    ok: true
+                    data:
+                      total_positive: 10472847
+                      total_recovered: 7274937
+                      total_deaths: 3197910
+                      total_active: 2839447
+                      new_positive: 358463
+                      new_recovered: 12443
+                      new_deaths: 54
+                      new_active: 2743
+                    message: Successfuly retrieve general covid cases information.
+
+  /yearly/{year}:
+    get:
+      tags: ["API Contract"]
+      description: Provide yearly data of total covid cases of the year provided in "year".
+      parameters:
+        - in: path
+          name: year
+          schema:
+            type: integer
+          required: true
+          description: Year of type integer.
+      responses:
+        '200':
+          description: Yearly data of total covid cases.
+          content:
+            application/json:
+              schema:
+                type: json
+                properties:
+                  ok:
+                    type: boolean
+                    description: Status
+                  data:
+                    type: object
+                    description: Cases
+                  message:
+                    type: string
+                    description: Response message
+              examples:
+                'JSON Response':
+                  value:
+                    ok: true
+                    data:
+                      year: "2022"
+                      positive: 4648293
+                      recovered: 3873823
+                      deaths: 238372
+                      active: 536098
+                    message: Successfuly retrieve yearly data of total covid cases of 2022.
+
+  /monthly/{year}/{month}:
+    get:
+      tags: ["API Contract"]
+      description: Provide monthly data of total covid cases of the year provided in "year-month".
+      parameters:
+        - in: path
+          name: year
+          schema:
+            type: integer
+          required: true
+          description: Year of type integer.
+        - in: path
+          name: month
+          schema:
+            type: integer
+          required: true
+          description: Month of type integer.
+      responses:
+        '200':
+          description: Monthly data of total covid cases.
+          content:
+            application/json:
+              schema:
+                type: json
+                properties:
+                  ok:
+                    type: boolean
+                    description: Status
+                  data:
+                    type: object
+                    description: Cases
+                  message:
+                    type: string
+                    description: Response message
+              examples:
+                'JSON Response':
+                  value:
+                    ok: true
+                    data:
+                      month: "2022-03"
+                      positive: 927328
+                      recovered: 374622
+                      deaths: 3727
+                      active: 548979
+                    message: Successfuly monthly yearly data of total covid cases of 2022-03.
+
+  /daily/{year}/{month}/{date}:
+    get:
+      tags: [ "API Contract" ]
+      description: Provide daily data of total covid cases of the year provided in "year-month-date".
+      parameters:
+        - in: path
+          name: year
+          schema:
+            type: integer
+          required: true
+          description: Year of type integer.
+        - in: path
+          name: month
+          schema:
+            type: integer
+          required: true
+          description: Month of type integer.
+        - in: path
+          name: date
+          schema:
+            type: integer
+          required: true
+          description: Date of type integer.
+      responses:
+        '200':
+          description: Daily data of total covid cases.
+          content:
+            application/json:
+              schema:
+                type: json
+                properties:
+                  ok:
+                    type: boolean
+                    description: Status
+                  data:
+                    type: object
+                    description: Cases
+                  message:
+                    type: string
+                    description: Response message
+              examples:
+                'JSON Response':
+                  value:
+                    ok: true
+                    data:
+                      month: "2022-03-07"
+                      positive: 342
+                      recovered: 187
+                      deaths: 3
+                      active: 152
+                    message: Successfuly daily yearly data of total covid cases of 2022-03-07.
