@@ -23,3 +23,9 @@ Here is the link if you want to use my tests collection: [Postman Covid Cases Du
 
 ### How do i use that link?
 1. Open Postman, in the left hand side you will see the collections tab. Then simply click Import.
+![Collections Tab](assets/images/pm1.png)
+2. Go to the link tab, and just paste the provided link there and click Continue.
+![Link Tab](assets/images/pm2.png)
+3. And you just have to click Import and you are done. 
+![Import](assets/images/pm3.png)
+Now you can use and modify my test collection as you want.
