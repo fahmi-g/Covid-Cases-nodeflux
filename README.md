@@ -4,7 +4,8 @@
  1. We can easily pull the image from the Docker Hub: ``` docker pull fammi/covid-status-api-crow ```
  2. Create the container without specific settings needed:
     ```
-    docker container create --name "CONTAINER_NAME" --publish "PORT":18080 fammi/covid-status-api-crow:dummy```
+    docker container create --name "CONTAINER_NAME" --publish "PORT":18080 fammi/covid-status-api-crow:dummy
+    ```
 
 ## How To Use
 - The API specification is in here: [Covid Cases Dummy API Specification](https://fahmi-g.github.io/Covid-Cases-nodeflux/)
@@ -16,7 +17,7 @@
   Here is the link if you want to use our tests collection: https://www.getpostman.com/collections/a8c4c7c1ec07498ca7ac</li>
   <ul><li><img src="assets/images/pass.png" alt="Tests" width="500"/></li></ul></ul>
 
-#### How do i use that link?
+#### How do I use that link?
    <ol><li> Open Postman, in the left hand side you will see the collections tab. Then simply click Import.</li>
    <ul><li><img src="assets/images/pm1.png" alt="Collections Tab" width="400"/></li></ul>
    <li> Go to the link tab, and just paste the provided link there and click Continue.</li>
